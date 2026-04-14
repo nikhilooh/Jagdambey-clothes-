@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jagdambey Clothehouse</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">👗</span>
+      <span class="logo-text">Jagdambey <span>Clothehouse</span></span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#account">Account</a>
+    </nav>
+    <div class="nav-icons">
+      <a href="#"><i class="fas fa-shopping-bag"></i></a>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#products" onclick="toggleMenu()">Products</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+    <a href="#account" onclick="toggleMenu()">Account</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag">✨ New Collection 2025</p>
+      <h1>Elite Style for<br/><span>Every Occasion</span></h1>
+      <p class="hero-sub">Where tradition meets fashion. Experience clothing crafted for confidence, designed for champions.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn-primary">Shop Now</a>
+        <a href="#about" class="btn-outline">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.png" alt="Fashion Model" onerror="this.style.display='none'"/>
+      <div class="hero-badge">
+        <span>500+</span>
+        <small>Happy Customers</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="brands">
+    <p class="brands-label">Trusted By</p>
+    <div class="brands-row">
+      <span>Godrej</span>
+      <span>Oppo</span>
+      <span>Coca‑Cola</span>
+      <span>PayPal</span>
+      <span>Philips</span>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products" id="products">
+    <div class="section-header">
+      <h2>Our Collection</h2>
+      <p>Handpicked styles crafted with quality and care</p>
+    </div>
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/kurta-white.jpg" alt="White Cotton Kurta" onerror="this.src='https://via.placeholder.com/300x320/f5f0eb/b58a5c?text=White+Kurta'"/>
+          <span class="badge">New</span>
+        </div>
+        <div class="product-info">
+          <h3>White Cotton Kurta</h3>
+          <div class="stars">★★★★★</div>
+          <div class="price-row">
+            <span class="price">₹ 699</span>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/tshirt-red.jpg" alt="Red Sports T-Shirt" onerror="this.src='https://via.placeholder.com/300x320/f5e0e0/c0392b?text=Red+T-Shirt'"/>
+          <span class="badge sale">Sale</span>
+        </div>
+        <div class="product-info">
+          <h3>Red Sports T-Shirt</h3>
+          <div class="stars">★★★★☆</div>
+          <div class="price-row">
+            <span class="price">₹ 299</span>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/saree-silk.jpg" alt="Silk Saree" onerror="this.src='https://via.placeholder.com/300x320/f0e8f5/8e44ad?text=Silk+Saree'"/>
+          <span class="badge">Popular</span>
+        </div>
+        <div class="product-info">
+          <h3>Silk Festive Saree</h3>
+          <div class="stars">★★★★★</div>
+          <div class="price-row">
+            <span class="price">₹ 1,899</span>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/jeans-blue.jpg" alt="Blue Denim Jeans" onerror="this.src='https://via.placeholder.com/300x320/e0eaf5/2980b9?text=Blue+Jeans'"/>
+        </div>
+        <div class="product-info">
+          <h3>Blue Denim Jeans</h3>
+          <div class="stars">★★★★☆</div>
+          <div class="price-row">
+            <span class="price">₹ 849</span>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/lehenga.jpg" alt="Bridal Lehenga" onerror="this.src='https://via.placeholder.com/300x320/fce8f0/c0392b?text=Lehenga'"/>
+          <span class="badge">Trending</span>
+        </div>
+        <div class="product-info">
+          <h3>Bridal Lehenga</h3>
+          <div class="stars">★★★★★</div>
+          <div class="price-row">
+            <span class="price">₹ 3,499</span>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="images/jacket-black.jpg" alt="Black Jacket" onerror="this.src='https://via.placeholder.com/300x320/e8e8e8/2c3e50?text=Black+Jacket'"/>
+          <span class="badge sale">Sale</span>
+        </div>
+        <div class="product-info">
+          <h3>Black Winter Jacket</h3>
+          <div class="stars">★★★★☆</div>
+          <div class="price-row">
+            <span class="price">₹ 1,299</span>
+            <button class="add-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <div class="about-img-box">
+        <img src="images/about.jpg" alt="About Us" onerror="this.src='https://via.placeholder.com/400x480/f5f0eb/b58a5c?text=Our+Store'"/>
+        <div class="about-stat">
+          <strong>10+</strong>
+          <small>Years in Business</small>
+        </div>
+      </div>
+    </div>
+    <div class="about-content">
+      <p class="section-tag">About Us</p>
+      <h2>Clothing That Tells<br/> Your Story</h2>
+      <p>Jagdambey Clothehouse is a family‑run clothing store dedicated to bringing you the finest fabrics and styles — from everyday casuals to festive wear. We believe every person deserves to look and feel their best.</p>
+      <ul class="about-list">
+        <li><i class="fas fa-check-circle"></i> Premium quality fabrics</li>
+        <li><i class="fas fa-check-circle"></i> Traditional & modern styles</li>
+        <li><i class="fas fa-check-circle"></i> Affordable prices</li>
+        <li><i class="fas fa-check-circle"></i> 7-day easy returns</li>
+      </ul>
+      <a href="#products" class="btn-primary">Explore Collection</a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <h2>Get In Touch</h2>
+      <p>We'd love to hear from you</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Visit Us</h4>
+            <p>Main Market Road, Varanasi, UP 221001</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Call Us</h4>
+            <p>+91 98765 43210</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email Us</h4>
+            <p>info@jagdambey.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button class="btn-primary" style="width:100%">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="account">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-text">👗 Jagdambey <span>Clothehouse</span></span>
+        <p>Your trusted clothing destination since 2015. Quality, style, and comfort — all in one place.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Useful Links</h4>
+        <a href="#">Coupons</a>
+        <a href="#">Blog Post</a>
+        <a href="#">Return Policy</a>
+        <a href="#">Join Affiliate</a>
+      </div>
+      <div class="footer-links">
+        <h4>Account</h4>
+        <a href="#">My Account</a>
+        <a href="#">Order History</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Help & Support</a>
+      </div>
+      <div class="footer-app">
+        <h4>Download Our App</h4>
+        <p>Available on Android & iOS</p>
+        <a href="#" class="app-btn"><i class="fab fa-google-play"></i> Google Play</a>
+        <a href="#" class="app-btn"><i class="fab fa-apple"></i> App Store</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Jagdambey Clothehouse. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+    }
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+</body>
+        </html>
+          
